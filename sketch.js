@@ -53,16 +53,17 @@ function draw() {
   //mude o valor do balão aleatório para 4
   var select_balloon = Math.round(random(1,4));
   
-  if (World.frameCount % 100 == 0) {
+  if (Wourd.frameCount % 100 == 0) {
    switch(select_balloon){
-    case 1: redBalloon.addImage(red_balloonImage);
+    case 1: redBalloon();
     break;
-    case 2: blueBalloon.addImage(blue_balloonImage);
+    case 2: blueBalloon();
     break;
-    case 3: greenBalloon.addImage(green_balloonImage);
+    case 3: greenBalloon();
     break;
-    case 4: pinkBalloon.addImage(pink_balloonImage);
+    case 4: pinkBalloon();
     break;
+   default:break;
 
   }}
   
